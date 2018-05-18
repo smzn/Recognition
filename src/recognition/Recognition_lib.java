@@ -52,9 +52,31 @@ public class Recognition_lib {
             System.out.println("Gender : " + gender);
             gender_score = node.get("images").get(0).get("faces").get(0).get("gender").get("score").asDouble();
             System.out.println("Gender_score : " + gender_score);
+            
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
+	public int getAge_min() {
+		return age_min;
+	}
+
+	public int getAge_max() {
+		return age_max;
+	}
+
+	public double getAge_score() {
+		return age_score;
+	}
+
+	public double getGender_score() {
+		return gender_score;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+	
 }
